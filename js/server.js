@@ -16,9 +16,10 @@ const server = http.createServer(function (req, res) {
         if ('palindrome' in params) {
             const input = params.palindrome
             // console.log(input, 'server input')
+            checkPalindrome(input)
             res.writeHead(200, { 'Content-Type': 'application/json' });
             const objToJson = {
-                input: input
+                result: result
             };
             res.end(JSON.stringify(objToJson));
         }
@@ -41,3 +42,16 @@ const server = http.createServer(function (req, res) {
 });
 
 server.listen(8000);
+
+function checkPalindrome(input) {
+    newInput = input.replaceAll(' ', '').toLowerCase();
+    let reverse = newInput.split('').reverse().join('')
+    if (reverse === newInput) {
+        result = `"${input}" is a palindrome! Very cool.`
+        return result
+    } else {
+        result = `Hmmm "${input}" is not a palindrome! But you know what is? "A man a plan a canal Panama", spiffy innit!`
+        return result
+        
+    }
+}
