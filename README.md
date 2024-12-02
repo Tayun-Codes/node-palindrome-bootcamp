@@ -1,22 +1,19 @@
-# ↔️ Week08 Bootcamp2019a Project: Server Side Palindrome Checker
+# ↔️ Server Side Palindrome Checker
+A simple web application that uses the fs and http modules to validate if a string is a palindrome on the server side.
 
-### Goal: Create a simple web application that uses the fs and http modules to validate if a string is a palindrome server side.
+https://github.com/user-attachments/assets/5b49ed75-2e23-40ec-aecf-3d383423e703
 
-### How to submit your code for review:
+## How It's Made:
+This is built using the following technologies:
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+- **Node.js**: Utilized for server-side development.
+- **JavaScript (JS)**: Employed for both client and server-side functionality.
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+**Key Packages Used:**
+- **fs**: Provides a framework for building the web application.
+- **http**: Easily uploads and retrieves media data.
+
+## What I Learned
+How to have front-end and server-side communication as well as separating functions to the server side therefore preventing front-end manipulation.
+- **fs** package, stands for file system, allows file manipulation through reading, writing, and updating files
+- **http** package provides a way to make HTTP requests to a server
